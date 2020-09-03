@@ -36,15 +36,15 @@ Same-Site에 해당하는 쿠키는 개별 웹사이트에 로그인한 사용�
 ### Same-Site Policy
 Chrome 상에서 Same-Site에 대한 정책은 크게 3가지로 나뉘어져있다.
 
-**1. NONE**
+**1. NONE**<br>
 쿠키 사용에 있어 소스가 되는 주소를 검증하지 않는 단계. 현재 IE에서는 해당 수준의 정책으로 서비스되고 있다.<br>
 (MS에서도 1월에 해당 문제를 언급하긴 했지만 현재 서신평 인증방식 등에서 Chrome은 안되고 IE는 되는걸로 보아 IE는 다소 정책 변경이 늦는 듯 하다.)
 
-**2. STRICT**
+**2. STRICT**<br>
 강하게 제한하는 정책. 모든 서비스의 도메인(주소창 및 외부서비스)과 대상 도메인(쿠키)이 일치해야만 쿠키가 포함되어 전송된다.<br>
 여기서 **전송**이라 함은 `<img>, <form>, <iframe>, ajax` 등 모든 외부요청을 의미한다.
 
-**3. LAX**
+**3. LAX**<br>
 Strict 정책에서 몇 전송방식이 예외처리된 정책이다.
 href 혹은 GET 방식의 form 정도만 예외처리된 방식.
 `Chrome 에서 이번 Same-Site의 Default를 이 LAX 정책으로 지정하였다.`
@@ -79,6 +79,7 @@ document.cookie = "crossCookie=~; SameSite=None; **Secure**"<br>
 addHeader 를 통해 Set-Cookie 설정값 추가 "**Secure**; SameSite=None"<br>
 - Tomcat<br>
 Tomcat에서 지원하는 Cookie Processor Component를 사용하여 일괄적으로 쿠키속성 추가<br>
+
 ```
 <Context>
     ...
