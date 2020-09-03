@@ -52,39 +52,43 @@ href 혹은 GET 방식의 form 정도만 예외처리된 방식.
 
 ### 해당 이슈로 인한 영향도
 이 모든 이야기의 목적이 되는 주제.
-(직장인이 되다보니, 이슈의 개념보단 나한테 무슨 영향이 있는지부터 찾게 된다...ㅠ)
+(직장인이 되다보니, 이슈의 개념보단 나한테 무슨 영향이 있는지부터 찾게 된다...ㅠ)<br>
 이러한 정책 상향으로 따라오는 문제는 기존에 외부업체 서비스를 통한 결제나 서신평에서 주관하는 인증 모듈 등의 Third-Party들이 정상적으로 작동되지 않을거라는 것.
 
-한 편, Session이 아닌 Cookie로 사용자 정보를 관리하고 있던 웹 사이트들 또한 타격을 입을 것으로 예상된다. **Same-Site는 First Suffix 도메인정보를 기준으로 삼기 때문에** 이에 어긋나는 도메인들은 기존 Cookie로 정보를 관리하던 방식이 무용지물 된다는 것이다.
+한 편, Session이 아닌 Cookie로 사용자 정보를 관리하고 있던 웹 사이트들 또한 타격을 입을 것으로 예상된다.<br>
+**Same-Site는 First Suffix 도메인정보를 기준으로 삼기 때문에** 이에 어긋나는 도메인들은 기존 Cookie로 정보를 관리하던 방식이 무용지물 된다는 것이다.
 
 ### 해결방법
 1. 이러한 브라우저 정책에 순응하고 발맞춰 따라가면 된다.
 모든 외부서비스를 자체 도메인 안에서 제작 또는 적용하여 같은 쿠키 안에서 사용할 수 있도록 하면 된다.
 - 아무리 기술력 좋고 막강한 자금력이 있다 하더라도 한계가 있다. 모든 프로그램을 자체적으로 개발/사용할 수 있는 곳은 거의 없을 것이다.( 구글 정도면 가능할지도... )
-
+<br>
 2. 쿠키를 사용하지 않는다.
 쿠키를 제거하고 코드 안에서 모든 정보를 관리한다.
 - 불가능한 얘기는 아니지만, 그렇다고 현실적인 이야기도 아니다. 협력업체 및 외부서비스 제공처와의 수 많은 이야기가 오고가게 될 것이며 그 과정에서 힘들다는 것을 느끼게 될 것이라 예상한다.
-
+<br>
 3. 편법을 사용한다.
 사실 브라우저나 거대 기업에서 시행하는 정책을 부담없이 바로 순응할 수 있는 곳은 거의 없을 것이다. 그렇기에 Chrome에서도 한 가지 방법을 제시하였다.
-**→** set-Cookie 헤더 값에 SameSite 설정을 미리 입력하는 방법이다.
+
+**→** set-Cookie 헤더 값에 SameSite 설정을 미리 입력하는 방법이다.<br>
 서버 설정 혹은 javascript 적용을 통해 SameSite 설정을 변경하고 해당 정책을 우회할 수 있도록 해주었다.
-- javascript
-document.cookie = "crossCookie=~; SameSite=None; **Secure**"
-- Java Application
-addHeader 를 통해 Set-Cookie 설정값 추가 "**Secure**; SameSite=None"
-- Tomcat
-    - Tomcat에서 지원하는 Cookie Processor Component를 사용하여 일괄적으로 쿠키속성 추가
-<code>
+- javascript<br>
+document.cookie = "crossCookie=~; SameSite=None; **Secure**"<br>
+- Java Application<br>
+addHeader 를 통해 Set-Cookie 설정값 추가 "**Secure**; SameSite=None"<br>
+- Tomcat<br>
+Tomcat에서 지원하는 Cookie Processor Component를 사용하여 일괄적으로 쿠키속성 추가<br>
+```
 <Context>
     ...
     <Cookieprocessor sameSiteCookie="None">
 </Context>
-</code>
-- WEB server(Apache Config)
+```
+- WEB server(Apache Config)<br>
 `Header always edit Set-Cookie (.*) "Secure; SameSite=None"`
+<br>
 
 바로 **SameSite 설정을 낮추고 해당 전송이 Secure하다는 설정값을 추가**하는 것!
+<br>
 
 임시방편이지만 당장 바꾸기 어려운 상황에서 해결이 필요하다면 도움이 되는 방법인 것 같다.
