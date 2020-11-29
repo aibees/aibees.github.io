@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   padding: 0 10px;
   width: 100%;
   margin: 0px auto;
@@ -219,7 +219,6 @@ table {
 
 .masthead {
   padding: 40px 60px;
-  margin: 20px auto 0 auto;
   width:80%;
   color: white;
   backdrop-filter: blur(8px);
@@ -247,7 +246,7 @@ table {
 
 .mainContentContainer {
   height:100%;
-  width:950px;
+  width:80vw;
   margin: 20px auto 60px;
   overflow: hidden;
 
@@ -274,7 +273,6 @@ table {
 }
 
 .site-info {
-  float: left;
 
   @include mobile {
     float: none;
@@ -304,7 +302,7 @@ table {
 }
 
 .site-description {
-  margin: -5px 0 0 0;
+  margin: 15px 0 0 0;
   color: #bfbfbf;
   font-family: "맑은 고딕", "Malgun Gothic", serif;
   font-size: 15px;
@@ -315,9 +313,8 @@ table {
 }
 
 nav {
-  float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 18px;
   color: #ffffff;
 
@@ -332,12 +329,11 @@ nav {
     margin-left: 20px;
     color: #ffffff;
     text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-weight: bolder;
+    letter-spacing: 2px;
 
     @include mobile {
       margin: 0 10px;
-      color: #3BB5FF;
     }
   }
 }
@@ -349,7 +345,7 @@ nav {
 #flexCenter {
   float: left;
   margin:0px 80px;
-  width: 690px;
+  width: 57.5vw;
   margin : 0px 10px 0px 0px;
 
   @include semiMobile {
@@ -360,12 +356,22 @@ nav {
 
 #flexRight {
   float: right;
-  width: 240px;
+  width: 20vw;
 
   @include semiMobile {
     margin:0px 20px;
     display: none;
   }
+}
+
+ul.category {
+  padding-left: 5px; 
+}
+
+li.category-list {
+  list-style: none;
+  margin: 30px 0px;
+  border-bottom: 1px solid $lightGray;
 }
 
 .posts > .post {

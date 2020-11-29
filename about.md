@@ -7,11 +7,76 @@ permalink: /about
 
 ## Technical Ability
 - **Programming Language Skill**
-    - C++ㅤㅤ : ■■■■■■■□□□
-    - javaㅤㅤ : ■■■■■□□□□□
-    - pythonㅤ: ■■■■□□□□□□
-    - node.jsㅤ: ■■■■■■□□□□
-    - scalaㅤㅤ: ■■□□□□□□□□
+
+<table>
+  <th>Language</th>
+  <th colspan="10">Level</th>
+  <tr>
+    <td>C++</td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#ffd700"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+  </tr>
+  <tr>
+    <td>Java</td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#ffd700"></td>
+    <td style="background-color:#ffd700"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+  </tr>
+  <tr>
+    <td>Python</td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+  </tr>
+  <tr>
+    <td>Node.JS</td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#ffd700"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+  </tr>
+  <tr>
+    <td>Scala</td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#5dd55d"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+    <td style="background-color:#fff"></td>
+  </tr>
+</table>
 
 <br>
 
@@ -62,3 +127,4 @@ permalink: /about
 
 ## Contact me
 qwt0326@gmail.com
+aibees1129@naver.com
