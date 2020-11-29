@@ -103,6 +103,10 @@ ul, ol {
 
 ul {
   list-style-type: disc;
+
+  li {
+    margin: 5px 0px;
+  }
 }
 
 ol {
@@ -372,6 +376,8 @@ li.category-list {
   list-style: none;
   margin: 30px 0px;
   border-bottom: 1px solid $lightGray;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
 }
 
 .posts > .post {
@@ -396,6 +402,11 @@ li.category-list {
     color: $gray;
     font-size: 22px;
     font-style: italic;
+
+    p {
+      padding: 8px 10px;
+      margin: 0px;
+    }
 
     @include semiMobile {
       margin: 1.6em .6em;

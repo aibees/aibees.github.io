@@ -56,28 +56,7 @@ Jekyll 프로젝트를 Fork해오면 기본적으로 주어지는 구성이 있�
 **index.html**
 * post들을 나열식으로 공개하는 html
 * 현 블로그에는 blog / portfolio로 분할하였다.
-****
 
-jekyll html 파일 중 하나이다.
-```
----
-# front matter라 하여 각 파일의 metadata를 지정할 수 있다.
-layout: default # layout/default.html을 가져다 쓰겠다는 의미
-permalink: /portfolio # navigate로 html 이동하고자 할 때 지정하면 된다.
---- 
-
-<div class="posts">
-  {% for post in site.posts %}
-    {% if post.category == "portfolio" %}
-    <!-- post의 category 항목이 portfolio인 post만 뽑아서 나열 -->
-      <article class="post">
-        <h1><a href="{{ site.baseurl }}{{ post.url }}" style="color:#32859e;">{{ post.title }}</a></h1>
-        {{ post.subtitle }}
-      </article>
-    {% endif %}
-  {% endfor %}
-</div>
-```
 
 navigate 기능을 쓰고자 할 때 post에 metadata를 추가해서
 해당 post를 나열하는 html에 조건문을 추가하여 선택하는 방식이

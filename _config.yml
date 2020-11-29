@@ -75,6 +75,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-paginate
 
 # Exclude these files from your production _site
 exclude:
@@ -86,5 +87,6 @@ exclude:
 
 # Paginate
 paginate: 10
+paginate_path: "/:num/"
 
-category_list: [spring, linux, sql, game, tip, study, algorithm, streaming]
+category_list: [spring, linux, oracle, dbms, game, tip, study, algorithm, streaming]
