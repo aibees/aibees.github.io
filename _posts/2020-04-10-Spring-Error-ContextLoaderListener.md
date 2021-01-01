@@ -2,7 +2,7 @@
 layout: post
 title: 【SPRING】STS ContextLoaderListener 문제해결
 subject: blog
-category: spring
+category: java
 author: junseo.park
 subtitle: STS는 도대체 왜 ContextLoaderListener가 왜 없다고 할까?
 ---

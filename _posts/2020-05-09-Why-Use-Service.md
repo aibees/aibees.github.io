@@ -2,7 +2,7 @@
 layout: post
 title: 【SPRING】Spring MVC에서 Service의 역할
 subject: blog
-category: spring
+category: java
 author: junseo.park
 subtitle: Service가 가지는 역할은 무엇일까
 ---
