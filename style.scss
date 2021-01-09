@@ -97,7 +97,7 @@ a {
 }
 
 ul, ol {
-  margin: 15px 0;
+  margin: 12px 0;
   padding-left: 30px;
 }
 
@@ -396,15 +396,15 @@ li.category-list {
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
+    margin: .6em .8em;
     border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
+    padding: 5px 4px;
+    color: #ca620d;
+    font-size: 18px;
     font-style: italic;
 
     p {
-      padding: 8px 10px;
+      padding: 3px 10px;
       margin: 0px;
     }
 

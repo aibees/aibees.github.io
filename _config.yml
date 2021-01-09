@@ -89,4 +89,4 @@ exclude:
 paginate: 10
 paginate_path: "/:num/"
 
-category_list: [java, linux, oracle, dbms, game, tip, study, algorithm, streaming]
+category_list: [docker, java, linux, oracle, dbms, game, tip, study, algorithm, streaming]
