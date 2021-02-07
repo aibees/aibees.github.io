@@ -8,7 +8,6 @@ var articleAccess = function(title) {
         title: title,
         ip : ip()
     })
-    alert(data)
     sendAjax('POST', 'http://101.101.219.206:5000/blog/postlog', data);
 }
 /**********************
