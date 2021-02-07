@@ -20,7 +20,8 @@ var sendAjax = function(type, url, data) {
         url: url,
         async: true,
         headers : {
-            "Content-Type" : "application/json"
+            "Content-Type" : "application/json",
+            "Access-Control-Allow-Origin" : "*"
         },
         dataType: 'json',
         data: data,
