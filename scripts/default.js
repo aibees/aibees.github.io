@@ -18,14 +18,15 @@ var sendAjax = function(type, url, data) {
     $.ajax({
         type: type, // get / post / put
         url: url,
-        async: true,
+        async: false,
+        crossDomain: true,
         headers : {
             "Content-Type" : "application/json",
             "Access-Control-Allow-Origin" : "*"
         },
         dataType: 'json',
         data: data,
-
+        jsonp: "aibeesAjax",
         success : function(ret) {
             
         },
