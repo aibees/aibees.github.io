@@ -16,7 +16,7 @@ subtitle: 2021.02.15일자 증권가뉴스
 ```
 South Korean prosecutors filed an arrest warrant on SK Networks Chairman 'Choi Shin-won' for embezzlement charges on Monday
 ```
-대한민국 검찰(prosecutors)은 월요일, SK 네트웍스 최시원의장을 횡령(embezzlement) 혐의 명목으로 체포 영장을 제출했다.
+대한민국 검찰(prosecutors)은 월요일, SK 네트웍스 최시원의장을 횡령(embezzlement) 혐의 명목으로 체포 영장을 청구(filed an arrest warrant)했다.
 
 ```
 The corruption investigation unit of the Seoul Central District Prosecutors' Office asked a court warrant for pre-trial detainment on Choi indicted for misappropriating corporate funds and creating slush funds.
